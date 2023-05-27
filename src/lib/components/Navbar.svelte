@@ -35,7 +35,7 @@
 </script>
 
 <nav
-    class="flex flex-wrap items-center justify-between md:py-5 md:px-10 lg:px-20 bg-white shadow-sm"
+    class="flex flex-wrap items-center justify-between md:py-5 md:px-10 lg:px-20 shadow-sm bg-blue-300"
     bind:clientWidth={navWidth}
     use:clickOutside
     on:outclick={handleClickOuside}
@@ -43,6 +43,20 @@
     <span class="font-semibold uppercase text-lg py-7 pl-10 md:py-0 md:pl-0">
         <a href="/">Connor Tsui</a>
     </span>
+    <div
+        class="toggle hidden md:w-auto md:flex text-right text-bold mt-0 border-none"
+    >
+        {#each links as link}
+            <a
+                href={link.url}
+                rel="external"
+                class="block md:inline-block text-gray-600 hover:text-gray-900 px-10 md:px-5 py-3 border-b border-gray-100 last:border-none md:border-none"
+            >
+                {link.title}
+            </a>
+        {/each}
+    </div>
+    <!-- For Mobile -->
     <div class="flex md:hidden py-7 pr-10">
         <button
             id="hamburger"
@@ -56,20 +70,6 @@
             {/if}
         </button>
     </div>
-    <div
-        class="toggle hidden md:w-auto md:flex text-right text-bold mt-5 mt-0 border-none"
-    >
-        {#each links as link, idx}
-            <a
-                href={link.url}
-                rel="external"
-                class="block md:inline-block text-gray-600 hover:text-gray-900 px-10 md:px-5 py-3 border-b border-gray-100 last:border-none md:border-none"
-            >
-                {link.title}
-            </a>
-        {/each}
-    </div>
-    <!--Mobile Links-->
     {#if menuIsOpen}
         <div
             in:fly={{
@@ -90,7 +90,7 @@
             }}
             class={`w-full text-bold mt-0 pb-1 md:hidden absolute bg-white top-[83px] z-10`}
         >
-            {#each links as link, idx}
+            {#each links as link}
                 <a
                     href={link.url}
                     rel="external"
