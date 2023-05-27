@@ -1,2 +1,8 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+    import Intro from '../lib/components/Intro.svelte';
+</script>
+
+<Intro
+    title="Hi! My name is Connor."
+    subTitle="I am a student, software engineer, and musician."
+/>

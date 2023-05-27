@@ -5,7 +5,9 @@ export default {
     theme: {
         extend: {
             backgroundImage: (theme) => ({
-                hero: "url('/images/hero-background.jpg')"
+                nightSky: "url('/images/night-sky.jpg')",
+                graphicsTermProject: "url('/images/graphics-term-project.png')",
+                introImage: "url('/images/wallpaper.jpg')",
             }),
             colors: {
                 'blog-primary': '#0080ff'
