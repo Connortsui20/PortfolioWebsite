@@ -1,33 +1,36 @@
-import type { IconDefinition } from '@fortawesome/free-solid-svg-icons';
-import { faHome, faAddressCard, faFolderOpen, faNewspaper, faLink } from '@fortawesome/free-solid-svg-icons';
+// import type { IconDefinition } from '@fortawesome/free-solid-svg-icons';
+// import { faHome, faAddressCard, faFolderOpen, faNewspaper, faLink } from '@fortawesome/free-solid-svg-icons';
 
 interface NavbarLink {
     title: string;
     url: string;
-    icon: IconDefinition;
 }
 
 const links: NavbarLink[] = [
     {
         title: 'Home',
         url: '/',
-        icon: faHome
     },
     {
         title: 'About',
         url: '/about',
-        icon: faAddressCard
     },
-    // {
-    //     title: 'Blog',
-    //     url: '/blog/1',
-    //     icon: faNewspaper
-    // },
-    // {
-    //     title: 'Connect',
-    //     url: '/connect',
-    //     icon: faLink
-    // }
+    {
+        title: 'Experience',
+        url: '/experience',
+    },
+    {
+        title: 'Projects',
+        url: '/projects',
+    },
+    {
+        title: 'Music',
+        url: '/music',
+    },
+    {
+        title: 'Connect',
+        url: '/connect',
+    },
 ];
 
 export default links;
