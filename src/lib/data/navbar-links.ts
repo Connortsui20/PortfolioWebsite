@@ -1,5 +1,5 @@
 import type { IconDefinition } from '@fortawesome/free-solid-svg-icons';
-import { faHome, faFolderOpen, faNewspaper, faLink } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faAddressCard, faFolderOpen, faNewspaper, faLink } from '@fortawesome/free-solid-svg-icons';
 
 interface NavbarLink {
     title: string;
@@ -14,15 +14,20 @@ const links: NavbarLink[] = [
         icon: faHome
     },
     {
-        title: 'Blog',
-        url: '/blog/1',
-        icon: faNewspaper
+        title: 'About',
+        url: '/about',
+        icon: faAddressCard
     },
-    {
-        title: 'Connect',
-        url: '/connect',
-        icon: faLink
-    }
+    // {
+    //     title: 'Blog',
+    //     url: '/blog/1',
+    //     icon: faNewspaper
+    // },
+    // {
+    //     title: 'Connect',
+    //     url: '/connect',
+    //     icon: faLink
+    // }
 ];
 
 export default links;
