@@ -3,11 +3,13 @@
 </script>
 
 <script lang="ts">
+    import toast from 'svelte-french-toast'
     import socials, { ConnectType } from "../../lib/data/socials";
     import ConnectCard from "../../lib/components/ConnectCard.svelte";
 
     const copyToClipboard = (link: string) => {
         navigator.clipboard.writeText(link);
+        toast.success(`Copied ${link} to clipboard!`);
     };
 </script>
 
