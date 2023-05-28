@@ -18,7 +18,6 @@ export interface SocialType {
     icon: IconDefinition;
     color: string;
     bgColor: string;
-    hoverColor: string;
 }
 
 const socials: SocialType[] = [
@@ -28,8 +27,15 @@ const socials: SocialType[] = [
         link: "connor.tsui20@gmail.com",
         icon: faEnvelope,
         color: "#FFFFFF",
-        hoverColor: "#DDDDDD",
         bgColor: "#8A2BE2",
+    },
+    {
+        name: "LinkedIn",
+        connectType: ConnectType.Link,
+        link: "https://www.linkedin.com/in/connortsui/",
+        icon: faLinkedin,
+        color: "#FFFFFF",
+        bgColor: "#0A66C2",
     },
     {
         name: "Github",
@@ -38,16 +44,6 @@ const socials: SocialType[] = [
         icon: faGithub,
         color: "#FFFFFF",
         bgColor: "#000000",
-        hoverColor: "#DDDDDD",
-    },
-    {
-        name: "LinkedIn",
-        connectType: ConnectType.Link,
-        link: "https://www.linkedin.com/in/connortsui/",
-        icon: faLinkedin,
-        color: "#FFFFFF",
-        hoverColor: "#DDDDDD",
-        bgColor: "#0A66C2",
     },
 ];
 

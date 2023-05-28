@@ -3,7 +3,7 @@
     import type { SocialType } from "../../lib/data/socials";
 
     export const social = $$props as SocialType;
-    let cssVarStyles = `--card-color:${social.color}; --card-bg-color:${social.bgColor}`;
+    const cssVarStyles = `--card-color:${social.color}; --card-bg-color:${social.bgColor}`;
 </script>
 
 <style>
@@ -17,8 +17,8 @@
     class="flex flex-col overflow-hidden rounded-lg"
     style={cssVarStyles}
 >
-    <div class="flex flex-col flex-1 items-center justify-between my-card p-12 ">
-        <Fa icon={social.icon} size="2x" />
-        <p class="mt-3">{social.name}</p>
+    <div class="flex flex-col flex-1 items-center justify-between p-20 my-card">
+        <Fa icon={social.icon} size="4x"/>
+        <p class="text-xl mt-6">{social.name}</p>
     </div>
 </div>
