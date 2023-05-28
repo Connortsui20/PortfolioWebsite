@@ -5,7 +5,12 @@ declare global {
         // interface Error {}
         // interface Locals {}
         // interface PageData {}
-        // interface Platform {}
+        interface Platform {
+            env?: {
+                YOUR_KV_NAMESPACE: KVNamespace;
+                YOUR_DURABLE_OBJECT_NAMESPACE: DurableObjectNamespace;
+            };
+        }
     }
     namespace svelte.JSX {
         interface HTMLAttributes<T> {
