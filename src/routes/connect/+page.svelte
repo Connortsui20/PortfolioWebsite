@@ -13,7 +13,7 @@
     };
 </script>
 
-<div class="container mx-auto flex-grow px-8">
+<div class="container mx-auto flex-grow">
     <h1 class="text-3xl mt-8 md:mt-16">Connect With Me</h1>
     <div class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-5 lg:max-w-none">
         {#each socials as social}
