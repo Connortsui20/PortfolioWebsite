@@ -1,27 +1,20 @@
 <script lang="ts">
-    import type { IconDefinition } from '@fortawesome/free-solid-svg-icons';
-    import Fa from 'svelte-fa';
+    import Fa from "svelte-fa";
+    import type { SocialType } from "../../lib/data/socials";
 
-    export let name: string;
-    export let icon: IconDefinition;
-    export let url: string;
-    export let bgColor: string;
-    export let color: string;
-
-    let cssVarStyles = `--card-color:${color};--card-bg-color:${bgColor}`;
+    export const social = $$props as SocialType;
+    let cssVarStyles = `--card-color:${social.color}; --card-bg-color:${social.bgColor}`;
 </script>
 
-<a href={url} target="_blank">
-    <div
-        class="flex flex-col overflow-hidden border-[1px] border-t-[#dddddd] border-x-[#cccccc] border-b-[#bbbbbb] rounded-lg"
-        style={cssVarStyles}
-    >
-        <div class="flex-1 my-card p-16 flex flex-col items-center justify-between">
-            <Fa {icon} size="2x" />
-            <p class="mt-3">{name}</p>
-        </div>
+<div
+    class="flex flex-col overflow-hidden border-[1px] border-t-[#dddddd] border-x-[#cccccc] border-b-[#bbbbbb] rounded-lg"
+    style={cssVarStyles}
+>
+    <div class="flex-1 my-card p-16 flex flex-col items-center justify-between">
+        <Fa icon={social.icon} size="2x" />
+        <p class="mt-3">{social.name}</p>
     </div>
-</a>
+</div>
 
 <style>
     .my-card {

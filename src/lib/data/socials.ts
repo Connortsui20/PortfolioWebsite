@@ -2,46 +2,52 @@ import type { IconDefinition } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
     faGithub,
-    // faYoutube,
     faLinkedin,
+    // faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 
-interface Social {
-    name: string;
-    url: string;
-    icon: IconDefinition;
-    bgColor: string;
-    color: string;
+export enum ConnectType {
+    Link,
+    Copy,
 }
 
-const socials: Social[] = [
+export interface SocialType {
+    name: string;
+    connectType: ConnectType;
+    link: string;
+    icon: IconDefinition;
+    color: string;
+    bgColor: string;
+    hoverColor: string;
+}
+
+const socials: SocialType[] = [
     {
         name: "Email",
-        url: "",
+        connectType: ConnectType.Copy,
+        link: "connor.tsui20@gmail.com",
         icon: faEnvelope,
-        bgColor: "#000000",
-        color: "#8A2BE2",
+        color: "#FFFFFF",
+        hoverColor: "#DDDDDD",
+        bgColor: "#8A2BE2",
     },
     {
         name: "Github",
-        url: "https://github.com/Connortsui20",
+        connectType: ConnectType.Link,
+        link: "https://github.com/Connortsui20",
         icon: faGithub,
+        color: "#FFFFFF",
         bgColor: "#000000",
-        color: "#ffffff",
+        hoverColor: "#DDDDDD",
     },
-    // {
-    //     name: 'Youtube',
-    //     url: '',
-    //     icon: faYoutube,
-    //     bgColor: '#ffffff',
-    //     color: '#ff0000'
-    // },
     {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/connortsui/",
+        connectType: ConnectType.Link,
+        link: "https://www.linkedin.com/in/connortsui/",
         icon: faLinkedin,
-        bgColor: "#0a66c2",
-        color: "#ffffff",
+        color: "#FFFFFF",
+        hoverColor: "#DDDDDD",
+        bgColor: "#0A66C2",
     },
 ];
 
