@@ -1,1 +1,1 @@
-<p>This website is a work in progress!  his is the music page.</p>
+<p>This website is a work in progress! This is the music page.</p>

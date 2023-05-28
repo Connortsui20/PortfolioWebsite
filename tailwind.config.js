@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-    mode: 'jit',
-    content: ['./src/**/*.{html,js,svelte,ts}'],
+    mode: "jit",
+    content: ["./src/**/*.{html,js,svelte,ts}"],
     theme: {
         extend: {
             backgroundImage: (theme) => ({
@@ -10,14 +10,14 @@ export default {
                 introImage: "url('/images/wallpaper.jpg')",
             }),
             colors: {
-                'blog-primary': '#0080ff'
-            }
-        }
+                "blog-primary": "#0080ff",
+            },
+        },
     },
     variants: {
         extend: {
-            backgroundImage: ['hover', 'focus']
-        }
+            backgroundImage: ["hover", "focus"],
+        },
     },
     plugins: [
         require("@tailwindcss/forms"),

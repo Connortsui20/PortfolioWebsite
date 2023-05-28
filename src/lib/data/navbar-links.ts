@@ -8,28 +8,28 @@ interface NavbarLink {
 
 const links: NavbarLink[] = [
     {
-        title: 'Home',
-        url: '/',
+        title: "Home",
+        url: "/",
     },
     {
-        title: 'About',
-        url: '/about',
+        title: "About",
+        url: "/about",
     },
     {
-        title: 'Experience',
-        url: '/experience',
+        title: "Experience",
+        url: "/experience",
     },
     {
-        title: 'Projects',
-        url: '/projects',
+        title: "Projects",
+        url: "/projects",
     },
     {
-        title: 'Music',
-        url: '/music',
+        title: "Music",
+        url: "/music",
     },
     {
-        title: 'Connect',
-        url: '/connect',
+        title: "Connect",
+        url: "/connect",
     },
 ];
 

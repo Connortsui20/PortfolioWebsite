@@ -1,6 +1,6 @@
 <script lang="ts">
-     export let title: string;
-     export let subTitle: string;
+    export let title: string;
+    export let subTitle: string;
 </script>
 
 <div class="flex flex-col h-screen bg-introImage bg-cover bg-center">
@@ -10,7 +10,9 @@
             src="/images/avatar.png"
             alt="Connor's Face"
         />
-        <h2 class="text-6xl font-bold mt-24 text-white text-center stroke-current">
+        <h2
+            class="text-6xl font-bold mt-24 text-white text-center stroke-current"
+        >
             {title}
         </h2>
         <h3 class="text-3xl mt-10 text-white text-center">{subTitle}</h3>
