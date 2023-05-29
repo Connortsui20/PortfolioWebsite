@@ -5,12 +5,15 @@ export default {
     theme: {
         extend: {
             backgroundImage: (theme) => ({
-                nightSky: "url('/images/night-sky.jpg')",
-                graphicsTermProject: "url('/images/graphics-term-project.png')",
-                introImage: "url('/images/wallpaper.jpg')",
+                // nightSky: "url('/images/night-sky.jpg')",
+                // graphicsTermProject: "url('/images/graphics-term-project.png')",
+                introImage: "url('/images/hexagons.jpg')",
             }),
             colors: {
-                "blog-primary": "#0080ff",
+                "primary-light": "#00A2FF",
+                "secondary-light": "#00FFBF",
+                "primary-dark": "#0C20EB",
+                "secondary-dark": "#7700FF",
             },
         },
     },

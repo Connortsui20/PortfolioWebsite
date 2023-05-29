@@ -27,7 +27,7 @@ const socials: SocialType[] = [
         link: "connor.tsui20@gmail.com",
         icon: faEnvelope,
         color: "#FFFFFF",
-        bgColor: "#8A2BE2",
+        bgColor: "#7700FF",
     },
     {
         name: "LinkedIn",
@@ -35,7 +35,7 @@ const socials: SocialType[] = [
         link: "https://www.linkedin.com/in/connortsui/",
         icon: faLinkedin,
         color: "#FFFFFF",
-        bgColor: "#0A66C2",
+        bgColor: "#00A2FF",
     },
     {
         name: "Github",

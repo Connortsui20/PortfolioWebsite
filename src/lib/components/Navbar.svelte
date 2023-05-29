@@ -3,7 +3,7 @@
 </script>
 
 <nav
-    class="flex flex-wrap items-center justify-between bg-blue-900 px-12 py-6"
+    class="flex flex-wrap items-center justify-between bg-primary-light px-12 py-6"
 >
     <span class="text-white font-semibold text-2xl"> Connor Tsui </span>
     <div class="flex w-auto text-right">
