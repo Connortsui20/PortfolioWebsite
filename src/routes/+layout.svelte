@@ -4,7 +4,7 @@
     import "../app.postcss";
 </script>
 
-<div class="flex flex-col h-screen bg-zinc-900 text-white">
+<div class="flex flex-col min-h-screen bg-zinc-900 text-white">
     <Toaster />
     <Navbar />
     <slot />
