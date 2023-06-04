@@ -1,7 +1,3 @@
-<script context="module">
-    export const prerender = true;
-</script>
-
 <script lang="ts">
     import toast from "svelte-french-toast";
     import socials, { ConnectType } from "../../lib/data/socials";
